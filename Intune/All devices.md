@@ -8,7 +8,7 @@
 3. Query : `https://graph.microsoft.com/v1.0/deviceManagement/managedDevices?$select=id,deviceName`
 4. O/P:
 ````json
-
+{
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#deviceManagement/managedDevices(id,deviceName)",
     "@odata.count": 10,
     "value": [
