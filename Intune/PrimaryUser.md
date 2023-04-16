@@ -1,8 +1,8 @@
-# All devices
+# PrimaryUser
 
 ---
 
-## Query
+## All device
 1. Method : Get
 2. Version : v1.0
 3. Query : `https://graph.microsoft.com/v1.0/deviceManagement/managedDevices?$select=id,deviceName`
@@ -51,6 +51,35 @@
         {
             "id": "12d83524-99f5-4468-9833-je1ccedca075",
             "deviceName": "VTPC0SVZ9N"
+        }
+    ]
+}
+````
+
+---
+
+## PrimaryUser
+1. Query : https://graph.microsoft.com/v1.0/deviceManagement/managedDevices/{id}/users
+2. if not empty, so we have a primaryUser
+3. else, we don't have a primaryUser for this device
+4. O/P when is not empty :
+````json
+{
+
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users",
+    "value": [
+        {
+            "businessPhones": [],
+            "displayName": "jessica, simpson",
+            "givenName": null,
+            "jobTitle": null,
+            "mail": null,
+            "mobilePhone": null,
+            "officeLocation": null,
+            "preferredLanguage": null,
+            "surname": null,
+            "userPrincipalName": "jessica.simpson@intunePracticeEdu.montreal.ca",
+            "id": "1fe2cea4-5758-41b9-b935-01ef50ab706b"
         }
     ]
 }
