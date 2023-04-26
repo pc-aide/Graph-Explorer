@@ -3,10 +3,11 @@
 ---
 
 ## All device
-1. Method : Get
-2. Version : v1.0
-3. Query : `https://graph.microsoft.com/v1.0/deviceManagement/managedDevices?$select=id,deviceName`
-4. O/P:
+1. Permissions : DeviceManagementManagedDevices.Read.All
+2. Method : Get
+3. Version : v1.0
+4. Query : `https://graph.microsoft.com/v1.0/deviceManagement/managedDevices?$select=id,deviceName`
+5. O/P:
 ````json
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#deviceManagement/managedDevices(id,deviceName)",
