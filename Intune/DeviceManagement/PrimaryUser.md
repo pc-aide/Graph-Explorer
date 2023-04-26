@@ -85,3 +85,10 @@
     ]
 }
 ````
+
+---
+
+## Filter
+|n|name|e.g.|O/P|
+|-|----|----|---|
+|1|userPrincipalName|`https://graph.microsoft.com/v1.0/deviceManagement/managedDevices?$count=false&$filter=userPrincipalName eq 'jessica.alba@mtl.ca'&$select=deviceName,userPrincipalName,manufacturer,serialNumber,model`||
