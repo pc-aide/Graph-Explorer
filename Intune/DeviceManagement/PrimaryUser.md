@@ -93,3 +93,4 @@
 |-|----|----|---|
 |1|userPrincipalName|`https://graph.microsoft.com/v1.0/deviceManagement/managedDevices?$count=false&$filter=userPrincipalName eq 'jessica.alba@mtl.ca'&$select=deviceName,userPrincipalName,manufacturer,serialNumber,model`||
 |2|without count|`https://graph.microsoft.com/v1.0/deviceManagement/managedDevices?&$filter=userPrincipalName+eq+'Jessica.Alba@mtl.ca'`||
+|3|deviceName|`https://graph.microsoft.com/beta/deviceManagement/managedDevices?$filter=deviceName eq 'deviceName'`|
